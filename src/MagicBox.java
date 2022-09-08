@@ -1,8 +1,8 @@
 import java.util.Random;
 
 public class MagicBox<T> {
-    private T[] items;
-    private Random random = new Random();
+    private final T[] items;
+    private final Random random = new Random();
 
     public MagicBox(int size) {
         this.items = (T[]) new Object[size];
